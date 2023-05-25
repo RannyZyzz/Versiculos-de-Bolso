@@ -9,16 +9,24 @@
 <body class="light-mode">
   <h1>Versículos de Bolso</h1>
 
-  <div>
-    <a href="01-geneses.html">Genesis</a>
-    <a href="02-exodo.html">Êxodo</a>
-    <a href="50-joao.html">João</a>
-  </div>
+  <div id="versiculo"></div>
+  <div id="reference"></div>
   
   <div>
+    <button onclick="someFunc()">Novo Versículo</button>
     <button onclick="toggleDarkMode()">Modo Escuro</button>
   </div>
 
+  
+
   <script src="darkModeLocalStorage.js"></script>
+  <script src="reloadPage.js"></script>
+  <script src="randomVersiculo.js"></script>
+
+  <script>
+    function someFunc(){
+      refreshPage();
+    }
+  </script>
 </body>
 </html>
