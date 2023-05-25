@@ -41,8 +41,22 @@ body.light-mode {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 20px;
   }
 
   button:hover {
+    background-color: #286090;
+  }
+
+  a{
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  a:hover {
     background-color: #286090;
   }
