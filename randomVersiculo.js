@@ -9,7 +9,7 @@ function gerarNumerosAleatorios(quantidade, min, max) {
     return numeros;
   }
 
-  var page = gerarNumerosAleatorios(1, 1, 6)
+  var page = gerarNumerosAleatorios(1, 1, 10)
 
   if(page == 1){
    
@@ -196,5 +196,129 @@ function gerarNumerosAleatorios(quantidade, min, max) {
     }
   
   fetchVersiculo6()
+
+  } else if (page == 7){
+
+    function fetchVersiculo7(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 21);
+      var versiculo = gerarNumerosAleatorios(1, 1, 25);
+  
+  
+      fetch(`https://bible-api.com/juizes ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo7()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+    }
+  
+  fetchVersiculo7()
+
+  }else if (page == 8){
+
+    function fetchVersiculo8(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 4);
+      var versiculo = gerarNumerosAleatorios(1, 1, 20);
+  
+  
+      fetch(`https://bible-api.com/rute ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo8()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+    }
+  
+  fetchVersiculo8()
+
+  }else if (page == 9){
+
+    function fetchVersiculo9(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 31);
+      var versiculo = gerarNumerosAleatorios(1, 1, 26);
+  
+  
+      fetch(`https://bible-api.com/1 samuel ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo9()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+    }
+  
+  fetchVersiculo9()
+
+  }else if (page == 10){
+
+    function fetchVersiculo10(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 24);
+      var versiculo = gerarNumerosAleatorios(1, 1, 28);
+  
+  
+      fetch(`https://bible-api.com/2 samuel ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo10()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+    }
+  
+  fetchVersiculo10()
 
   }
