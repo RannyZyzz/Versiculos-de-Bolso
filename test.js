@@ -1,7 +1,7 @@
-var capitulo = 10
-var versiculo = 26
+var capitulo = 29
+var versiculo = 30
 
-fetch(`https://bible-api.com/1 samuel ${capitulo}:${versiculo}?translation=almeida`)
+fetch(`https://bible-api.com/1 cronicas ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
