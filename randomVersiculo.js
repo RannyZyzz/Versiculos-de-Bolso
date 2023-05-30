@@ -9,7 +9,7 @@ function gerarNumerosAleatorios(quantidade, min, max) {
     return numeros;
   }
 
-  var page = gerarNumerosAleatorios(1, 1, 13)
+  var page = gerarNumerosAleatorios(1, 1, 16)
 
   if(page == 1){
    
@@ -413,5 +413,101 @@ function gerarNumerosAleatorios(quantidade, min, max) {
     }
   
   fetchVersiculo13()
+
+  } else if (page == 14){
+
+    function fetchVersiculo14(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 36);
+      var versiculo = gerarNumerosAleatorios(1, 1, 30);
+  
+  
+      fetch(`https://bible-api.com/2 cronicas ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo14()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo14()
+
+  } else if (page == 15){
+
+    function fetchVersiculo15(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 10);
+      var versiculo = gerarNumerosAleatorios(1, 1, 30);
+  
+  
+      fetch(`https://bible-api.com/esdras ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo15()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo15()
+
+  } else if (page == 16){
+
+    function fetchVersiculo16(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 13);
+      var versiculo = gerarNumerosAleatorios(1, 1, 31);
+  
+  
+      fetch(`https://bible-api.com/neemias ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo16()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo16()
 
   }
