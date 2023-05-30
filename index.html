@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2538459973697183"crossorigin="anonymous"></script>
   <title>Versículos de Bolso</title>
 </head>
 <body class="light-mode">
@@ -27,6 +28,17 @@
     function someFunc(){
       refreshPage();
     }
+  </script>
+  <div id="adsense-container"></div>
+  <script>
+    fetch('adsense.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('adsense-container').innerHTML = data;
+      })
+      .catch(error => {
+        console.error('Ocorreu um erro ao buscar o código do AdSense: ' + error.message);
+      });
   </script>
 </body>
 </html>
