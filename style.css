@@ -62,3 +62,8 @@ body.light-mode {
   a:hover {
     background-color: #286090;
   }
+
+  footer {
+    padding: 20px;
+    text-align: center;
+  }
