@@ -513,11 +513,11 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   } else if (page == 17){
 
     function fetchVersiculo17(){
-      var capitulo = gerarNumerosAleatorios(1, 1, 14);
-      var versiculo = gerarNumerosAleatorios(1, 1, 20);
+      var capitulo = gerarNumerosAleatorios(1, 1, 16);
+      var versiculo = gerarNumerosAleatorios(1, 1, 25);
   
   
-      fetch(`https://bible-api.com/tobias ${capitulo}:${versiculo}?translation=almeida`)
+      fetch(`https://bible-api.com/judite ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
@@ -542,14 +542,14 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   
     fetchVersiculo17()
 
-  } else if (page == 18){
+  }  else if (page == 18){
 
     function fetchVersiculo18(){
-      var capitulo = gerarNumerosAleatorios(1, 1, 16);
-      var versiculo = gerarNumerosAleatorios(1, 1, 25);
+      var capitulo = gerarNumerosAleatorios(1, 1, 10);
+      var versiculo = gerarNumerosAleatorios(1, 1, 20);
   
   
-      fetch(`https://bible-api.com/judite ${capitulo}:${versiculo}?translation=almeida`)
+      fetch(`https://bible-api.com/ester ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
@@ -574,14 +574,14 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   
     fetchVersiculo18()
 
-  }  else if (page == 19){
+  } else if (page == 19){
 
     function fetchVersiculo19(){
-      var capitulo = gerarNumerosAleatorios(1, 1, 10);
-      var versiculo = gerarNumerosAleatorios(1, 1, 20);
+      var capitulo = gerarNumerosAleatorios(1, 1, 42);
+      var versiculo = gerarNumerosAleatorios(1, 1, 30);
   
   
-      fetch(`https://bible-api.com/ester ${capitulo}:${versiculo}?translation=almeida`)
+      fetch(`https://bible-api.com/jo ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
@@ -609,11 +609,11 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   }  else if (page == 20){
 
     function fetchVersiculo20(){
-      var capitulo = gerarNumerosAleatorios(1, 1, 16);
-      var versiculo = gerarNumerosAleatorios(1, 1, 60);
+      var capitulo = gerarNumerosAleatorios(1, 1, 150);
+      var versiculo = gerarNumerosAleatorios(1, 1, 20);
   
   
-      fetch(`https://bible-api.com/1 macabeus ${capitulo}:${versiculo}?translation=almeida`)
+      fetch(`https://bible-api.com/salmos ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
@@ -638,14 +638,14 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   
     fetchVersiculo20()
 
-  }  else if (page == 21){
+  }   else if (page == 21){
 
     function fetchVersiculo21(){
-      var capitulo = gerarNumerosAleatorios(1, 1, 15);
-      var versiculo = gerarNumerosAleatorios(1, 1, 40);
+      var capitulo = gerarNumerosAleatorios(1, 1, 31);
+      var versiculo = gerarNumerosAleatorios(1, 1, 30);
   
   
-      fetch(`https://bible-api.com/2 macabeus ${capitulo}:${versiculo}?translation=almeida`)
+      fetch(`https://bible-api.com/proverbios ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
@@ -673,11 +673,11 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   }  else if (page == 22){
 
     function fetchVersiculo22(){
-      var capitulo = gerarNumerosAleatorios(1, 1, 42);
-      var versiculo = gerarNumerosAleatorios(1, 1, 30);
+      var capitulo = gerarNumerosAleatorios(1, 1, 12);
+      var versiculo = gerarNumerosAleatorios(1, 1, 20);
   
   
-      fetch(`https://bible-api.com/jo ${capitulo}:${versiculo}?translation=almeida`)
+      fetch(`https://bible-api.com/eclesiastes ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
@@ -702,14 +702,14 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   
     fetchVersiculo22()
 
-  }  else if (page == 23){
+  } else if (page == 23){
 
     function fetchVersiculo23(){
-      var capitulo = gerarNumerosAleatorios(1, 1, 150);
-      var versiculo = gerarNumerosAleatorios(1, 1, 20);
+      var capitulo = gerarNumerosAleatorios(1, 1, 8);
+      var versiculo = gerarNumerosAleatorios(1, 1, 15);
   
   
-      fetch(`https://bible-api.com/salmos ${capitulo}:${versiculo}?translation=almeida`)
+      fetch(`https://bible-api.com/canticos ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
@@ -734,14 +734,14 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   
     fetchVersiculo23()
 
-  }   else if (page == 24){
+  } else if (page == 24){
 
     function fetchVersiculo24(){
-      var capitulo = gerarNumerosAleatorios(1, 1, 31);
-      var versiculo = gerarNumerosAleatorios(1, 1, 30);
+      var capitulo = gerarNumerosAleatorios(1, 1, 66);
+      var versiculo = gerarNumerosAleatorios(1, 1, 20);
   
   
-      fetch(`https://bible-api.com/proverbios ${capitulo}:${versiculo}?translation=almeida`)
+      fetch(`https://bible-api.com/isaias ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
@@ -766,14 +766,14 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   
     fetchVersiculo24()
 
-  }  else if (page == 25){
+  } else if (page == 25){
 
     function fetchVersiculo25(){
-      var capitulo = gerarNumerosAleatorios(1, 1, 12);
-      var versiculo = gerarNumerosAleatorios(1, 1, 20);
+      var capitulo = gerarNumerosAleatorios(1, 1, 52);
+      var versiculo = gerarNumerosAleatorios(1, 1, 30);
   
   
-      fetch(`https://bible-api.com/eclesiastes ${capitulo}:${versiculo}?translation=almeida`)
+      fetch(`https://bible-api.com/jeremias ${capitulo}:${versiculo}?translation=almeida`)
           .then(response => {
             if(response.ok){
               return response.json()
