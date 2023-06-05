@@ -9,7 +9,7 @@ function gerarNumerosAleatorios(quantidade, min, max) {
     return numeros;
   }
 
-  var page = gerarNumerosAleatorios(1, 1, 25)
+  var page = gerarNumerosAleatorios(1, 1, 40)
 
   if(page == 1){
    
@@ -798,4 +798,483 @@ function gerarNumerosAleatorios(quantidade, min, max) {
   
     fetchVersiculo25()
 
-  }
+  } else if (page == 26){
+
+    function fetchVersiculo26(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 5);
+      var versiculo = gerarNumerosAleatorios(1, 1, 30);
+  
+  
+      fetch(`https://bible-api.com/lamentacoes ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo26()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo26()
+
+  } else if (page == 27){
+
+    function fetchVersiculo27(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 48);
+      var versiculo = gerarNumerosAleatorios(1, 1, 26);
+  
+  
+      fetch(`https://bible-api.com/ezequiel ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo27()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo27()
+
+  } else if (page == 28){
+
+    function fetchVersiculo28(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 14);
+      var versiculo = gerarNumerosAleatorios(1, 1, 37);
+  
+  
+      fetch(`https://bible-api.com/daniel ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo28()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo28()
+
+  } else if (page == 29){
+
+    function fetchVersiculo29(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 14);
+      var versiculo = gerarNumerosAleatorios(1, 1, 14);
+  
+  
+      fetch(`https://bible-api.com/oseias ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo29()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo29()
+
+  } else if (page == 30){
+
+    function fetchVersiculo30(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 3);
+      var versiculo = gerarNumerosAleatorios(1, 1, 24);
+  
+  
+      fetch(`https://bible-api.com/joel ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo30()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo30()
+
+  } else if (page == 31){
+
+    function fetchVersiculo31(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 9);
+      var versiculo = gerarNumerosAleatorios(1, 1, 16);
+  
+  
+      fetch(`https://bible-api.com/amos ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo31()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo31()
+
+  } else if (page == 32){
+
+    function fetchVersiculo32(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 4);
+      var versiculo = gerarNumerosAleatorios(1, 1, 12);
+  
+  
+      fetch(`https://bible-api.com/jonas ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo32()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo32()
+
+  } else if (page == 33){
+
+    function fetchVersiculo33(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 7);
+      var versiculo = gerarNumerosAleatorios(1, 1, 15);
+  
+  
+      fetch(`https://bible-api.com/miqueias ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo33()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo33()
+
+  } else if (page == 34){
+
+    function fetchVersiculo34(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 3);
+      var versiculo = gerarNumerosAleatorios(1, 1, 15);
+  
+  
+      fetch(`https://bible-api.com/naun ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo34()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo34()
+
+  } else if (page == 35){
+
+    function fetchVersiculo35(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 3);
+      var versiculo = gerarNumerosAleatorios(1, 1, 18);
+  
+  
+      fetch(`https://bible-api.com/habacuque ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo35()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo35()
+
+  } else if (page == 36){
+
+    function fetchVersiculo36(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 3);
+      var versiculo = gerarNumerosAleatorios(1, 1, 17);
+  
+  
+      fetch(`https://bible-api.com/sofonias ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo36()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo36()
+
+  } else if (page == 37){
+
+    function fetchVersiculo37(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 2);
+      var versiculo = gerarNumerosAleatorios(1, 1, 19);
+  
+  
+      fetch(`https://bible-api.com/ageu ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo37()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo37()
+
+  } else if (page == 38){
+
+    function fetchVersiculo38(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 14);
+      var versiculo = gerarNumerosAleatorios(1, 1, 15);
+  
+  
+      fetch(`https://bible-api.com/zacarias ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo38()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo38()
+
+  } else if (page == 39){
+
+    function fetchVersiculo39(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 4);
+      var versiculo = gerarNumerosAleatorios(1, 1, 13);
+  
+  
+      fetch(`https://bible-api.com/malaquias ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo39()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+  
+        }
+  
+    fetchVersiculo39()
+
+  } else if (page == 40){
+
+    function fetchVersiculo40(){
+      var capitulo = gerarNumerosAleatorios(1, 1, 28);
+      var versiculo = gerarNumerosAleatorios(1, 1, 38);
+  
+  
+      fetch(`https://bible-api.com/mateus ${capitulo}:${versiculo}?translation=almeida`)
+          .then(response => {
+            if(response.ok){
+              return response.json()
+            } else if(response.status === 404){
+              return fetchVersiculo40()
+            } else {
+              throw new Error('Requisiçào falhou com status:' + response.status)
+            }
+          })
+          .then( data =>{
+            var versiculoElement = document.getElementById('versiculo');
+            versiculoElement.textContent= data.text;
+            var versiculoReference = document.getElementById('reference')
+            versiculoReference.textContent = data.reference;
+          })
+          .catch( error => {
+            console.log('Ocorreu um erro: '+ error.message)
+          })
+  
+        }
+  
+    fetchVersiculo40()
+
+  } 
